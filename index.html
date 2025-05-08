@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Indicação Premiada</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="mobile.css" media="screen and (max width:300px)">
+<style>
+    @font-face {
+        font-family:  'MinhaFonte';
+        src: url('Questrial-Regular.ttf'), format('Questrial-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'TWO' ;
+        src: url('TWKEverett-Light.otf'), format('TWKEverett-Light.otf');
+    }
+body {color: #2A2B2D;
+    background-color: #DFDED9;
+    font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1} 
+div.cool {
+  display: flex;
+}
+h1.título {
+  flex: auto;
+  text-align: center;
+
+}
+div.premios1 {
+  padding-top: 20px;
+  background-color: #F1F1F1;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  justify-content:start;
+  align-content: center;
+  flex-flow: column nowrap;
+}
+div.premios2 {
+  background-color: #F1F1F1;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  justify-content:start;
+  align-content: center;
+  flex-flow: column nowrap;
+}
+div.premios3 {
+  background-color: #F1F1F1;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  justify-content:start;
+  align-content: center;
+  flex-flow: column nowrap;
+}
+div.botao {
+  display: flex;
+  justify-items: left;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large" style="z-index:3;width:300px;font-weight:bold;margin: auto;
+background-color: #2A2B2D; color: #F1F1F1;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">x</a>
+
+      <img
+      style="padding-left: 16px;padding-top: 87px;"
+      width="80px"
+      src="logo50.png" alt="Ferragatti">
+
+ 
+  </div>
+  <div style="font-family:'MinhaFonte';padding-top: 20px;"
+  class="w3-bar-block">
+  <hr style="width:300px;border:2px solid; color: #2f2f2f;" class="w3-round">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
+    <a href="#Regras" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Condições</a> 
+    <a href="#Premiações" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Premiações</a> 
+    <a href="#Contato" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header style="background-color: #2A2B2D; color: #F1F1F1;"
+class="w3-container w3-top w3-hide-large  w3-xlarge ;">  
+  <a href="javascript:void(0)" class="w3-button  w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Ferragatti
+  </span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="background-color:#DFDED9;margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+
+  
+  <!-- Photo grid (modal) -->
+ <img 
+ src="Indicação Premiada (13).png" alt="flyer" style="width: 100%;">
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Regras -->
+  <div class="w3-container" id="Regras" style= 
+  "margin-top:75px">
+    <h1 style="color: #2A2B2D;"
+    class="w3-xxxlarge"><b>Condições</b></h1>
+    <hr style="width:50px;border:5px solid; color: #2A2B2D;" class="w3-round">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias omnis mollitia quod fuga explicabo beatae inventore delectus porro exercitationem voluptas tenetur dolore maiores, doloribus natus, rem numquam ad! Repellat?</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+  <!-- Prêmios -->
+  <div class="w3-container" id="Premiações" style="margin-top:75px">
+    <h1 style="color: #2A2B2D;"
+    class="w3-xxxlarge "><b>Premiações</b></h1>
+    <hr style="width:50px;border:5px solid; color: #2A2B2D;" class="w3-round">
+    
+  </div>
+
+  <!-- Premiações-->
+  <div class="w3-row">
+    <div class="premios1">
+      <div class="descrição1">
+        <img src="COSTELETA-DE-CORDEIRO-COM-ALECRIM-E-RISOTTO-DE-ACAFRAO-2.jpeg" alt="">
+      </div>
+      <div class="descrição1">
+        <h2>Jantar no Fasano</h2>
+      </div>
+    </div>
+    <div class="premios2">
+      <div class="descrição2">
+        <img src="vg_ouropreto_principal.jpg" alt="">
+      </div>
+          <div class="descrição2">
+            <h2>viagem</h2>
+          </div>
+    </div>
+       <div class="premios3">
+         <div class="descrição3"
+         ><img src="492098-3xi62ol1qu-swhr (1).jpg" alt="">
+               </div>
+              <div class="descrição3">
+         <h2>viagem<h2>
+       </div>
+     </div>
+       
+    </div>
+
+
+  <!-- Contact -->
+  <div class="wpp" id="Contato" style="margin-top: 75px; padding: 0.01em 16px;">
+    <h1 style="color: #2A2B2D;"
+    class="w3-xxxlarge "><b>Contato</b></h1>
+    <hr style="width:50px;border:5px solid; color: #2A2B2D;" class="w3-round">
+    <div class="botao"
+    style="justify-content: left;">
+      <a href="https://wa.me/553199888008?text=Oi,%20Gostaria%20de%20obter%20mais%20informações%20sobre%20o%20programa%20de%20indivação%20premiada%20da%20Ferragatti%20imóveis" target="_blank " rel="external " style="margin: auto;">
+      <img src="wpp.png" alt="" width="150px">
+      </a>
+    </div>
+ 
+  
+
+  
+
+  <!-- End page content -->
+   
+</div>
+</div>
+
+<!-- rodapé -->
+
+<div style="background-color: #2f2f2f;padding: 30px; width: 100%;">
+  <h2 style="color: #F1F1F1; text-align: right; align-content: end; font-family:'TWO';font-size: small;"
+  >
+    Ferragatti imóveis
+  </h2>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
